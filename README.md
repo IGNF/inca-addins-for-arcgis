@@ -38,6 +38,9 @@ The query manager allows you to create a table with references to objects from s
 The edit queue is used to browse one by one the objects of a pre-recorded table that may contain references to several layers. The pointed object is selected. Ability to navigate to the first or last object in the list, and to jump to rank n/n_max.
 ![Edit Queue](https://github.com/IGNF/inca-addins-for-arcgis/blob/main/rsc/img/addin-queryman-edit-query-preview.jpg?raw=true)
 
+Resources
+-----------
+- [*Query guide*](https://github.com/IGNF/inca-addins-for-arcgis/blob/main/rsc/doc/user_guide/Add-In_QM_-_User_guide.pdf?raw=true)
 
 ---
 
