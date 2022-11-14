@@ -56,3 +56,14 @@ Resources
 >	 - [Compiled for ArcGIS Pro 2.6](https://github.com/IGNF/inca-addins-for-arcgis/blob/main/releases/0.9/for-pro-2.6/QueryManager.esriAddinX?raw=true)
 >	 - [Compiled for ArcGIS Pro 2.9](https://github.com/IGNF/inca-addins-for-arcgis/blob/main/releases/0.9/for-pro-2.9/QueryManager.esriAddinX?raw=true)
 > ---
+> 
+> ### *v1.0*
+>
+>  1. `Maplex Engine Config`
+>	 - [Compiled for ArcGIS Pro 2.6](https://github.com/IGNF/inca-addins-for-arcgis/blob/main/releases/1.0/for-pro-2.6/MaplexEngineConfig.esriAddinX?raw=true)
+>	 - [Compiled for ArcGIS Pro 2.9](https://github.com/IGNF/inca-addins-for-arcgis/blob/main/releases/1.0/for-pro-2.9/MaplexEngineConfig.esriAddinX?raw=true)
+> ---
+>  2. `Query Manager`
+>	 - [Compiled for ArcGIS Pro 2.6](https://github.com/IGNF/inca-addins-for-arcgis/blob/main/releases/1.0/for-pro-2.6/QueryManager.esriAddinX?raw=true)
+>	 - [Compiled for ArcGIS Pro 2.9](https://github.com/IGNF/inca-addins-for-arcgis/blob/main/releases/1.0/for-pro-2.9/QueryManager.esriAddinX?raw=true)
+> ---
