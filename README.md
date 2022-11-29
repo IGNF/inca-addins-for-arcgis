@@ -11,7 +11,7 @@ Project:               INCA
 Contributor:           INCA Project Team
 Organization:          IGN France
 Date de mise-à-jour:   21/09/2022
-ArcGIS Pro:            2.6 and 2.9
+ArcGIS Pro:            2.9 (and 2.6 jusqu'à la version 1.0) 
 .NET Target Framework: 4.8
 ```
 
@@ -40,7 +40,7 @@ The edit queue is used to browse one by one the objects of a pre-recorded table 
 
 Resources
 -----------
-- [*Query guide*](https://github.com/IGNF/inca-addins-for-arcgis/blob/main/rsc/doc/user_guide/Add-In_QM_-_User_guide.pdf?raw=true)
+- [*User guide*](https://github.com/IGNF/inca-addins-for-arcgis/blob/main/rsc/doc/user_guide/Add-In_QM_-_User_guide.pdf?raw=true)
 
 ---
 
@@ -67,3 +67,12 @@ Resources
 >	 - [Compiled for ArcGIS Pro 2.6](https://github.com/IGNF/inca-addins-for-arcgis/blob/main/releases/1.0/for-pro-2.6/QueryManager.esriAddinX?raw=true)
 >	 - [Compiled for ArcGIS Pro 2.9](https://github.com/IGNF/inca-addins-for-arcgis/blob/main/releases/1.0/for-pro-2.9/QueryManager.esriAddinX?raw=true)
 > ---
+>  
+> ### *v1.1*
+>
+>  1. `Maplex Engine Config`
+>	 - [Compiled for ArcGIS Pro 2.9](https://github.com/IGNF/inca-addins-for-arcgis/blob/main/releases/1.1/for-pro-2.9/MaplexEngineConfig.esriAddinX?raw=true)
+> ---
+>  2. `Query Manager`
+>	 - [Compiled for ArcGIS Pro 2.9](https://github.com/IGNF/inca-addins-for-arcgis/blob/main/releases/1.1/for-pro-2.9/QueryManager.esriAddinX?raw=true)
+>	
