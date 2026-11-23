@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "ExportAnnoProCoreHostAPI": {
-      "commandName": "Project",
-      "commandLineArgs": "['D:\\\\INCA\\\\\\\\Automatique\\\\projets\\\\Socle_carto_5\\\\Socle_carto.gdb\\\\ECRITURE\\\\r_chemin_n1_Label_anno_def_25k'] D:\\\\INCA\\\\Automatique\\\\projets\\\\Socle_carto_5\\\\Socle_carto.gdb\\\\ECRITURE\\\\e_toponyme_droit_anno_def_25k D:\\\\INCA\\\\Automatique\\\\projets\\\\Socle_carto_5\\\\Socle_carto.gdb\\\\ECRITURE\\\\e_toponyme_courbe_anno_def_25k CHARACTERSPACING;CHARACTERWIDTH;FLIPANGLE;FONTLEADING;FONTNAME;FONTSIZE;FONTSTYLE;HORIZONTALALIGNMENT;OVERRIDE;STATUS;UNDERLINE;VERTICALALIGNMENT;WORDSPACING;XOFFSET;YOFFSET;CLEABS;SYMBO;TYPO;NUMREC;NUMZONE;TERRITOIRE"
-    }
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "profiles": {
-    "IgnMaster": {
-      "commandName": "Executable",
-      "executablePath": "C:\\Program Files\\ArcGIS\\Pro\\bin\\ArcGISPro.exe",
-      "nativeDebugging": true
-    }
-  }
-}
