@@ -1,0 +1,68 @@
+<UserControl x:Class="IncaDisplay.AttributeSetsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:extensions="clr-namespace:ArcGIS.Desktop.Extensions;assembly=ArcGIS.Desktop.Extensions" 
+             xmlns:_AttributeSets="clr-namespace:IncaDisplay._AttributeSets"
+             xmlns:diag="clr-namespace:System.Diagnostics;assembly=WindowsBase"
+             mc:Ignorable="d"
+             d:DataContext="{Binding Path=IncaDisplay.AttributeSetsViewModel}"             
+             >
+
+    <DockPanel x:Name="AttributeSetPane">
+        <Grid Width="{Binding ActualWidth, ElementName=AttributeSetPane}"
+              Height="{Binding ActualHeight, ElementName=AttributeSetPane}"
+              HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            
+            <Grid Grid.Row="0" >
+                <!--<Menu déroulant pour le choix de l'opérateur  -->         
+                <ComboBox  VerticalAlignment="Top" HorizontalAlignment="Left" 
+                           MinWidth="10" MinHeight="5" Margin="0,0,0,0"
+                           ItemsSource="{Binding Actions}" 
+                           SelectedItem="{Binding SelectedAction, Mode=TwoWay }"
+                           DisplayMemberPath="DisplayName">                
+                </ComboBox>
+               
+                <!-- Liste des boutons importés automatiquement -->
+                <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Margin="0,25,0,0">
+                    <ItemsControl ItemsSource="{Binding Rules}" >
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel Orientation="Horizontal"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                       
+                        <!-- Les boutons représentés par une image (créé via l'applyRuleCommand) avec action + action click droit -->                        
+                        <ItemsControl.ItemTemplate>
+                             <DataTemplate>
+                                 <Button Command="{Binding DataContext.ApplyRuleCommand, 
+                                 RelativeSource={RelativeSource AncestorType=ItemsControl}}"  
+                                     Width="32" Height="32" ToolTip="{Binding BtnName}" 
+                                     CommandParameter="{Binding}" Margin="2" PreviewMouseRightButtonUp="Button_RightClick"
+                                     Visibility="{Binding BtnVisibility}">
+                                     <Image Source="{Binding BtnImageText}" 
+                                        Stretch="Uniform" 
+                                        StretchDirection="Both"
+                                        Width="30" Height="30" />
+                                 </Button>
+                             </DataTemplate>
+                         </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+            </Grid>
+           
+           <!-- Zone pour le message -->          
+            <Grid Grid.Row="1" VerticalAlignment="Bottom" Margin="5,0,5,0"> 
+                <TextBlock
+                    Text="{Binding StatusMessage}" TextWrapping="Wrap" 
+                    Foreground="DarkGreen" FontSize="12" />
+            </Grid>
+        </Grid>            
+    </DockPanel>
+</UserControl>

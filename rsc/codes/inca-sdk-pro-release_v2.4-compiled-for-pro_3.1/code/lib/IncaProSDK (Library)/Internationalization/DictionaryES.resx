@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConfigFilePathIsNullOrEmptyMessage" xml:space="preserve">
+    <value>Advertencia: la ruta absoluta del archivo de configuración Excel debe completarse en el Paso (1)</value>
+  </data>
+  <data name="CreateLabelClassAndBindToLayer" xml:space="preserve">
+    <value>Crear las Clases de Etiquetas</value>
+  </data>
+  <data name="CreateLabelClassAndBindToLayerFailedMessage" xml:space="preserve">
+    <value>[Advertencia] Ocurrió un problema al crear las Clases de Etiquetas y vincularlas con las capas, consulte el archivo de registros (logs) para obtener más información.</value>
+  </data>
+  <data name="CreateLabelClassAndBindToLayerOKMessage" xml:space="preserve">
+    <value>[OK] El proceso de creación de Clases de Etiquetas y la vinculación con las Capas se completó con éxito.</value>
+  </data>
+  <data name="CreateLabelClassAndBindToLayerToolTip" xml:space="preserve">
+    <value>Crear las Clases de Etiquetas y asociarlas con las Capas en el mapa actual</value>
+  </data>
+  <data name="LabelClasses" xml:space="preserve">
+    <value>(4) Clases de Etiquetas:</value>
+  </data>
+  <data name="LoadColors" xml:space="preserve">
+    <value>Colores</value>
+  </data>
+  <data name="LoadColorsFailedMessage" xml:space="preserve">
+    <value>[Advertencia] Ocurrió un problema al cargar los Colores en el archivo de estilos seleccionado (.stylx), consulte el archivo de registros (logs) para obtener más información.</value>
+  </data>
+  <data name="LoadColorsOKMessage" xml:space="preserve">
+    <value>[OK] El proceso de leer y cargar los Colores en el archivo de estilos seleccionado (.stylx) se completó con éxito.</value>
+  </data>
+  <data name="LoadColorsToolTip" xml:space="preserve">
+    <value>Cargar en el archivo de estilos seleccionado (.stylx) los Colores definidos en el archivo de configuración Excel de Maplex, pestaña 'color'</value>
+  </data>
+  <data name="LoadColorTextSymbolAndLabelPlacement" xml:space="preserve">
+    <value>(3) Cargar Colores, Símbolos de Texto y Posiciones de Etiqueta en el archivo .stylx:</value>
+  </data>
+  <data name="LoadLabelPlacements" xml:space="preserve">
+    <value>Posiciones de Etiqueta</value>
+  </data>
+  <data name="LoadLabelPlacementsFailedMessage" xml:space="preserve">
+    <value>[Advertencia] Ocurrió un problema al cargar las Posiciones de Etiqueta en el archivo de estilos seleccionado (.stylx), consulte el archivo de registros (logs) para obtener más información.</value>
+  </data>
+  <data name="LoadLabelPlacementsOKMessage" xml:space="preserve">
+    <value>[OK] El proceso de leer y cargar las Posiciones de Etiqueta en el archivo de estilos seleccionado (.stylx) se completó con éxito</value>
+  </data>
+  <data name="LoadLabelPlacementsToolTip" xml:space="preserve">
+    <value>Cargar en el archivo de estilos seleccionado (.stylx) las Posiciones de Etiqueta definidas en el archivo de configuración Excel de Maplex, pestaña 'label_placement'</value>
+  </data>
+  <data name="LoadTextSymbols" xml:space="preserve">
+    <value>Símbolos de Texto</value>
+  </data>
+  <data name="LoadTextSymbolsFailedMessage" xml:space="preserve">
+    <value>[Advertencia] Ocurrió un problema al cargar los Símbolos de Texto en el archivo de estilos seleccionado (.stylx), consulte el archivo de registros (logs) para obtener más información.</value>
+  </data>
+  <data name="LoadTextSymbolsOKMessage" xml:space="preserve">
+    <value>[OK] El proceso de leer y cargar los Símbolos de Texto en el archivo de estilos seleccionado (.stylx) se completó con éxito.</value>
+  </data>
+  <data name="LoadTextSymbolsToolTip" xml:space="preserve">
+    <value>Cargar en el archivo de estilos seleccionado (.stylx) los Símbolos de Texto definidos en el archivo de configuración Excel de Maplex, pestaña 'text_symbol'</value>
+  </data>
+  <data name="MECHeading" xml:space="preserve">
+    <value>Configuración del Motor Maplex</value>
+  </data>
+  <data name="Messages" xml:space="preserve">
+    <value>Mensajes:</value>
+  </data>
+  <data name="OpenLogs" xml:space="preserve">
+    <value>Abrir el archivo de registros (logs)</value>
+  </data>
+  <data name="OverwriteItems" xml:space="preserve">
+    <value>Reemplazar los elementos existentes</value>
+  </data>
+  <data name="OverwriteItemsToolTip" xml:space="preserve">
+    <value>Reemplazar</value>
+  </data>
+  <data name="SelectConfigFile" xml:space="preserve">
+    <value>(1) Seleccione el archivo de configuración Excel:</value>
+  </data>
+  <data name="SelectStylxFile" xml:space="preserve">
+    <value>(2) Seleccione el archivo de estilos (.stylx):</value>
+  </data>
+  <data name="StylxNotSelectedMessage" xml:space="preserve">
+    <value>Advertencia: se debe seleccionar un archivo de estilos (.stylx) existente en el proyecto (.aprx) en el Paso (2)</value>
+  </data>
+  <data name="ReintegrationHeading" xml:space="preserve">
+    <value>Reintegracion</value>
+  </data>
+  <data name="SelectDataEditorSdeFile" xml:space="preserve">
+    <value>Archivo .sde del propietario de los datos </value>
+  </data>
+  <data name="SelectGdbFile" xml:space="preserve">
+    <value>Archivo .gdb de la deodatabasis del réplica </value>
+  </data>
+  <data name="SelectReplicaName" xml:space="preserve">
+    <value>Eligir el réplica</value>
+  </data>
+  <data name="LaunchReintegration" xml:space="preserve">
+    <value>Ejecutar</value>
+  </data>
+  <data name="DataEditorFilePathIsNullOrEmptyMessage" xml:space="preserve">
+    <value>Error: El archivo .sde del propietario de los datos esta vacío o incorrecto</value>
+  </data>
+  <data name="GdbFilePathIsNullOrEmptyMessage" xml:space="preserve">
+    <value>Error: El archivo .gdb de la geodatabasis del replica esta vacío o incorrecto</value>
+  </data>
+  <data name="VersionNotSelectedMessage" xml:space="preserve">
+    <value>Error: Un replica tiene que ser eligido</value>
+  </data>
+  <data name="SynchronizationKoMessage" xml:space="preserve">
+    <value>Error: Sincronización finalizada por error </value>
+  </data>
+  <data name="ReconciliationKoMessage" xml:space="preserve">
+    <value>Error: Conciliación finalizada por error</value>
+  </data>
+  <data name="ReconciliationAbortMessage" xml:space="preserve">
+    <value>Advertencia: Se ha detectado conflictos durante el proceso de conciliación.
+	Asegúrese de resolver todos los conflictos antes de volver a intentar la conciliación.</value>
+  </data>
+  <data name="ReconciliationOkMessage" xml:space="preserve">
+    <value>Exito: La reintegracion de los datos se acabo con éxito</value>
+  </data>
+  <data name="GrantKOMessage" xml:space="preserve">
+    <value>Error: Falta el GRANT sobre la tabla sde.get_items en su sde connección</value>
+  </data>
+  <data name="VersionNotExistingMessage" xml:space="preserve">
+    <value>Error: No hay réplicas que coincidan con esta geodatabasis</value>
+  </data>
+  <data name="SimultaneousReconcileMessage" xml:space="preserve">
+    <value>Error: No se puede conciliar: la versión de destino se está utilizando para conciliar actualmente.</value>
+  </data>
+  <data name="ReplaceSymbols" xml:space="preserve">
+    <value>Reemplazar símbolos</value>
+  </data>
+  <data name="ReplaceSymbolsFailedMessage" xml:space="preserve">
+    <value>[Advertencia] Ocurrió un problema al actualizar la colección de símbolos de la clase de entidades de anotación con los elementos del archivo de estilo seleccionado (.stylx).</value>
+  </data>
+  <data name="ReplaceSymbolsOKMessage" xml:space="preserve">
+    <value>[OK] El proceso de actualización de la colección de símbolos de la clase de entidades de anotación se ha completado correctamente. Cierre el proyecto para ver el resultado en el mapa.</value>
+  </data>
+  <data name="SelectAnnotationFeatureClass" xml:space="preserve">
+    <value>Seleccione la clase de entidad de anotación</value>
+  </data>
+  <data name="SelectStylxWithTextSymbols" xml:space="preserve">
+    <value>Seleccione el archivo .stylx con los nuevos símbolos de texto</value>
+  </data>
+</root>

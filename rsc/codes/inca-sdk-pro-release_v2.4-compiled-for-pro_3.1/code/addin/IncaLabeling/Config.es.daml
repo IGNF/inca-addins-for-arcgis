@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArcGIS defaultAssembly="IncaLabeling.dll" defaultNamespace="IncaLabeling" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{6f36404d-b6a8-4a8d-90e0-7596aa2fb4ca}" version="2.4" desktopVersion="3.1.41833">
+    <!--"version": AddIn version (tag du code); "desktopVersion": ArcGIS Pro Target version-->
+    <Name>IncaLabeling</Name>
+    <Description>Herramientas complementarias dedicadas a la gestión y optimización del etiquetado en ArcGIS Pro</Description>
+    <Image>Images\MaplexEngineConfig32.png</Image>
+    <Author>IGN-Inca</Author>
+    <Company>IGN</Company>
+    <Date>05/11/2026</Date>
+    <Subject>Framework</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <dependencies>
+    <!-- IgnMaster-->
+    <dependency name="{66f854f7-1e68-45bd-8751-280c7591036e}" />
+  </dependencies>
+  <modules>
+    <insertModule id="IncaLabeling_Module" className="IncaLabelingModule" autoLoad="false" caption="Configuración Maplex">
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="IncaLabeling_Group1" keytip="Inca_Labeling" caption="Etiquetado">
+          <!-- host controls within groups -->
+          <button refID="IL_MaplexEngineConfig_ShowButton" size="large" />
+          <button refID="IL_UpdateSymbols_ShowButton" size="small" />
+        </group>
+      </groups>
+      <controls>
+        <!-- Main button in the "IGN Add-Ins" tab -->
+        <button id="IL_MaplexEngineConfig_ShowButton" keytip="___" caption="Configuración Maplex" className="_MaplexEngineConfig.MaplexEngineConfig_ShowButton" loadOnClick="true" smallImage="Images\MaplexEngineConfig16.png" largeImage="Images\MaplexEngineConfig32.png">
+          <tooltip heading="Configuración del motor Maplex">
+			  Mostrar panel de configuración del motor Maplex desde un archivo de configuración de Excel<disabledText /></tooltip>
+        </button>
+        <!-- Main button in the "IGN Add-Ins" tab -->
+        <button id="IL_UpdateSymbols_ShowButton" keytip="___" caption="Actualizar símbolos" className="_UpdateSymbols.UpdateSymbols_ShowButton" loadOnClick="true" smallImage="Images\UpdateSymbols16.png" largeImage="Images\UpdateSymbols.png">
+          <tooltip heading="">Actualizar la colección de símbolos de una clase de anotación<disabledText />
+          </tooltip>
+        </button>
+      </controls>
+      <dockPanes>
+        <!-- And this is the main panel where all the controls are defined : see the control "MaplexEngineConfigView.xaml" -->
+        <dockPane id="IL_MaplexEngineConfig" caption="Configuración del Motor Maplex" className="MaplexEngineConfigViewModel" dock="group" dockWith="esri_core_contentsDockPane" condition="esri_mapping_openProjectCondition">
+          <content className="MaplexEngineConfigView" />
+        </dockPane>
+        <dockPane id="IL_UpdateSymbols" caption="Actualizar símbolos" className="_UpdateSymbols.UpdateSymbolsViewModel" dock="group" dockWith="esri_core_contentsDockPane" condition="esri_mapping_openProjectCondition">
+          <content className="UpdateSymbolsView" />
+        </dockPane>
+      </dockPanes>
+    </insertModule>
+    <updateModule refID="IgnMaster_Module">
+      <tabs>
+        <updateTab refID="IgnMaster_Tab">
+          <insertGroup refID="IncaLabeling_Group1" />
+        </updateTab>
+      </tabs>
+    </updateModule>
+  </modules>
+</ArcGIS>

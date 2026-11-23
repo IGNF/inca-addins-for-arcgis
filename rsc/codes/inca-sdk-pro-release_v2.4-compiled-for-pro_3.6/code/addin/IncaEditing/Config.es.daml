@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArcGIS defaultAssembly="IncaEditing.dll" defaultNamespace="IncaEditing" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{cf2c5527-7a8b-4873-93db-3276f3e4137d}" version="2.4" desktopVersion="3.6">
+    <!--"version": AddIn version (tag du code); "desktopVersion": ArcGIS Pro Target version-->
+    <Name>IncaEditing</Name>
+    <Description>Herramientas complementarias dedicadas a la edición de datos en ArcGIS Pro</Description>
+    <Image>Images\CastFeatures32.png</Image>
+    <Author>IGN-Inca</Author>
+    <Company>IGN France</Company>
+    <Date>05/11/2026</Date>
+    <Subject>Framework</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <dependencies>
+    <!-- IgnMaster-->
+    <dependency name="{66f854f7-1e68-45bd-8751-280c7591036e}" />
+  </dependencies>
+  <modules>
+    <insertModule id="IncaEditing_Module" className="IncaEditingModule" autoLoad="true" caption="Inca Editing">
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="IncaEditing_Group1" keytip="IE_25" caption="25K">
+          <!-- host controls within groups -->
+          <button refID="AddParapetFeature" size="small" />
+          <button refID="QM_FootSymboTool" size="small" />
+          <tool refID="QM_SpotHeightTool"  size="small"/>
+
+          <button refID="QM_Attribute25K_ShowButton"  size="large" separator="true"/>
+        </group>
+        <group id="IncaEditing_Group2" keytip="Inca_Editing" caption="Edición">          
+          <button refID="IncaEditing_Underline" size="small" />
+          <button refID="IncaEditing_Frame" size="small"/>
+          <splitButton refID="IE_CastFeatures_SplitButton" separator="true"/>
+          <button refID="IncaEditing_ShareSymbols" size="large" />
+          <button refID="IE_ToggleOffsetSide_Tool" size="large"/>
+        </group>
+        <group id="IncaEditing_Group3" keytip="IE_100" caption="100k">
+          <button refID="QM_Attribute100K_ShowButton"  size="large" separator="true"/>
+        </group>
+      </groups>
+      <controls>
+        <!-- Main button in the "IGN Add-Ins" tab -->
+        <button id="IE_CastFeatures_Button" keytip="___" caption="Transmitir" loadOnClick="false"
+            className="_CastFeatures.CastFeatures_Button"
+            smallImage="Images\CastFeatures16.png" largeImage="Images\CastFeatures32.png">
+          <tooltip heading="Transmitir">
+            Transmitir entidades de un tipo a otro<disabledText />
+          </tooltip>
+        </button>
+        <button id="IE_CastFeaturesSettings_Button" keytip="___" caption="Importación de reglas de conversión..." loadOnClick="false"
+            className="_CastFeatures.CastFeaturesSettings_Button"
+            smallImage="Images\GenericOpen16.png" largeImage="Images\GenericOpen32.png">
+          <tooltip heading="Importar reglas de conversión...">
+            Importe un archivo de Excel que describa cómo transmitir las entidades<disabledText />
+          </tooltip>
+        </button>
+        <checkBox id="IE_CastFeatures_default_gdb_CheckBox" keytip="XC" caption="Destino en la base de datos predeterminada" loadOnClick="false"
+            className="_CastFeatures.CastFeatures_default_gdb_CheckBox">
+          <tooltip heading="Destino en la base de datos predeterminada">
+            Busque la clase de entidad de destino solo en la base de datos predeterminada del proyecto. De lo contrario, busque entre todas las bases de datos cargadas en el proyecto<disabledText />
+          </tooltip>
+        </checkBox>
+        <checkBox id="IE_CastFeatures_intrabase_CheckBox" keytip="XC" caption="Intra-base permitido" className="_CastFeatures.CastFeatures_intrabase_CheckBox" loadOnClick="false">
+          <tooltip heading="Permitir la conversión de entidades dentro de la misma base de datos.">
+            Las entidades pueden ser reclasificadas o reformateadas en su base de datos de origen. De lo contrario, la geodatabase de origen no se considera una geodatabase de destino potencial.<disabledText />
+          </tooltip>
+        </checkBox>
+        <button id="IE_ExportSymbols_Button" caption="Exportación de símbolos" loadOnClick="true" keytip="Z0"
+            className="_ExportSymbols.ExportSymbols_Button"
+            smallImage="Images\ExportSymbols16.png" largeImage="Images\ExportSymbols32.png">
+          <tooltip heading="Exportación de símbolos">
+            Guardar símbolos de las capas seleccionadas en un nuevo archivo de estilo<disabledText />
+          </tooltip>
+        </button>
+        <button id="AddParapetFeature" caption="Generer parapeto(s) y barbulas" loadOnClick="true" keytip="B1"
+            className="_FeatureEdit.AddParapetControls"
+            smallImage="Images\parapet16.png" largeImage="Images\parapet32.png">
+          <tooltip heading="Parapeto del puente">
+            Generar parapetos y bárbulas a partir de objetos lineales de la misma clase de elemento<disabledText />
+          </tooltip>
+        </button>
+        <button id="IncaEditing_Underline"  keytip="___" caption="Subrayar topónimo" loadOnClick="false"
+            className="_TouristEdit.Underline_Button"
+            smallImage="Images\Underline16.png" largeImage="Images\Underline32.png">
+          <tooltip heading="Subrayar topónimo">
+            Creación de los subrayados para los topónimos seleccionados<disabledText />
+          </tooltip>
+        </button>
+        <button id="IncaEditing_Frame"  keytip="___" caption="Enmarcar topónimo" loadOnClick="false"
+            className="_TouristEdit.Frame_Button"
+            smallImage="Images\Frame16.png" largeImage="Images\Frame32.png">
+          <tooltip heading="Enmarcar topónimo">
+            Creación de la(s) trama(s) para el/los topónimo(s) seleccionado(s)<disabledText />
+          </tooltip>
+        </button>
+        <tool id="IE_ToggleOffsetSide_Tool"  categoryRefID="esri_editing_CommandList" keytip="___"
+            caption="Lado de compensación" loadOnClick="false"
+            className="_OffsetSide.OffsetSideTool" condition="esri_mapping_mapPane"
+            smallImage="Images\OffsetSide16.png" largeImage="Images\OffsetSide32.png">
+          <tooltip heading="Cambiar lado de compensación">
+            Alternar el lado desplazado (derecha/izquierda) de las entidades de línea de desplazamiento a lo largo de una red. Ejemplo de rutas de senderismo siguiendo las carreteras<disabledText />
+          </tooltip>
+          <content L_group="Inca" gallery2d="true" gallery3d="false" />
+        </tool>
+        <button id="QM_Attribute25K_ShowButton" keytip="__" caption="Rellene el atributo 25K"
+            className="_FeatureEdit.Attribute25K_Button" condition="esri_mapping_mapPane"
+            smallImage="MosaicMethodClosestToViewPoint16" largeImage="MosaicMethodClosestToViewPoint32">
+          <tooltip heading="25K">
+            Complete el atributo 25K con verdadero o falso para mostrar o no el objeto <disabledText />
+          </tooltip>
+        </button>
+        <tool id="QM_SpotHeightTool" keytip="___" categoryRefID="esri_editing_CommandList" caption="Cota" loadOnClick="true"
+            className="_FeatureEdit.SpotHeightTool" condition="esri_mapping_mapPane"
+            smallImage="Images\SpotHeight16.png" largeImage="Images\SpotHeight32.png">
+          <tooltip heading="Cota 25K">
+            Crear una cota.<disabledText />
+          </tooltip>
+          <content L_group="Inca" gallery2d="true" gallery3d="false"/>
+        </tool>
+        <button id="QM_FootSymboTool" keytip="___" caption="Símbolo del campo de fútbol " loadOnClick="false"
+            className="_FeatureEdit.FootSymboTool"
+            smallImage="Images\Foot16.png" largeImage="Images\Foot32.png">
+          <tooltip heading="Símbolo del 'campo de fútbol'">
+            Crea el círculo y la línea media de los campos de fútbol.<disabledText/>
+          </tooltip>
+        </button>
+      </controls>
+      <splitButtons>
+        <splitButton id="IE_CastFeatures_SplitButton">
+          <button refID="IE_CastFeatures_Button" />
+          <button refID="IE_CastFeaturesSettings_Button" separator="true" />
+          <button refID="IE_CastFeatures_default_gdb_CheckBox" separator="true" />
+          <button refID="IE_CastFeatures_intrabase_CheckBox" separator="true" />
+        </splitButton>
+      </splitButtons>
+    </insertModule>
+    <updateModule refID="IgnMaster_Module">
+      <tabs>
+        <updateTab refID="IgnMaster_Tab">
+          <insertGroup refID="IncaEditing_Group1" />
+          <insertGroup refID="IncaEditing_Group2" />
+          <!--<insertGroup refID="IncaEditing_Group3" /> -->
+        </updateTab>
+      </tabs>
+    </updateModule>
+    <updateModule refID="esri_mapping">
+      <menus>
+        <updateMenu refID="esri_mapping_layerContextMenu">
+          <insertButton refID="IE_ExportSymbols_Button" separator="true" placeWith="esri_mapping_selectedLayerSymbologyButton" />
+        </updateMenu>
+      </menus>
+    </updateModule>
+  </modules>
+  <categories>
+    <updateCategory refID="esri_embeddableControls">
+      <insertComponent id="OffsetSide_OffsetSide" className="_OffsetSide.OffsetSideViewModel">
+        <content className="OffsetSideView" />
+      </insertComponent>
+      <insertComponent id="SpotHeight_options" className="_FeatureEdit.SpotHeightViewModel">
+        <content className="SpotHeightView" />
+      </insertComponent>
+    </updateCategory>
+  </categories>
+  <!--<accelerators>
+    <insertAccelerator refID="IE_CastFeatures_Button" flags="Ctrl" key="W" />
+  </accelerators>-->
+</ArcGIS>

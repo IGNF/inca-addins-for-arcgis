@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "IncaReintegration": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files\\ArcGIS\\Pro\\bin\\ArcGISPro.exe",
+      "nativeDebugging": true
+    }
+  }
+}

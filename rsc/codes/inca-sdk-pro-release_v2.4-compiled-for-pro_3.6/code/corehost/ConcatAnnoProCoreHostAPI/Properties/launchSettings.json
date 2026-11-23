@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ConcatAnnoProCoreHostAPI": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\\\INCA\\\\Migration_France25\\\\France25_INCA_31\\\\file_gdb.gdb\\\\e_toponyme_courbe_n0_anno_25000 D:\\\\INCA\\\\Migration_France25\\\\France25_INCA_31\\\\file_gdb.gdb\\\\e_toponyme_anno_25000 ident cleabs mot_complet ecr_compl typo"
+    }
+  }
+}

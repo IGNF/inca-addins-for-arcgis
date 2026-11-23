@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConfigFilePathIsNullOrEmptyMessage" xml:space="preserve">
+    <value>Attention : le chémin absolu du fichier Excel de configuration doit être renseigné dans l'Etape (1)</value>
+  </data>
+  <data name="CreateLabelClassAndBindToLayer" xml:space="preserve">
+    <value>Créer les Classes d’Etiquettes</value>
+  </data>
+  <data name="CreateLabelClassAndBindToLayerFailedMessage" xml:space="preserve">
+    <value>[Attention] Un problème est survenu lors de la création des Classes d'Etiquettes et leur couplage avec les Couches respectives, veuillez regarder dans le fichier journaux (logs) pour plus d'information.</value>
+  </data>
+  <data name="CreateLabelClassAndBindToLayerOKMessage" xml:space="preserve">
+    <value>[OK] La création des Classes d'Etiquettes et leur couplage avec les Couches respectives a finalisé correctement.</value>
+  </data>
+  <data name="CreateLabelClassAndBindToLayerToolTip" xml:space="preserve">
+    <value>Créer les Classes d’Etiquettes et les associer avec les Couches respectives dans la carte sélectionnée</value>
+  </data>
+  <data name="LabelClasses" xml:space="preserve">
+    <value>(4) Classes d’Etiquettes :</value>
+  </data>
+  <data name="LoadColors" xml:space="preserve">
+    <value>Couleurs</value>
+  </data>
+  <data name="LoadColorsFailedMessage" xml:space="preserve">
+    <value>[Attention] Un problème est survenu lors du chargement des Couleurs dans le fichier de styles (.stylx) sélectionné, veuillez regarder dans le fichier journaux (logs) pour plus d'information.</value>
+  </data>
+  <data name="LoadColorsOKMessage" xml:space="preserve">
+    <value>[OK] Le chargement des Couleurs dans le fichier de styles (.stylx) sélectionné a finalisé correctement.</value>
+  </data>
+  <data name="LoadColorsToolTip" xml:space="preserve">
+    <value>Charger dans la galerie (.stylx) choisie les couleurs définies dans le fichier de configuration Maplex, onglet 'color'</value>
+  </data>
+  <data name="LoadColorTextSymbolAndLabelPlacement" xml:space="preserve">
+    <value>(3) Charger les Couleurs, les Symboles Textuels et les Placements d'Etiquettes dans le fichier .stylx :</value>
+  </data>
+  <data name="LoadLabelPlacements" xml:space="preserve">
+    <value>Placement des Etiquettes</value>
+  </data>
+  <data name="LoadLabelPlacementsFailedMessage" xml:space="preserve">
+    <value>[Attention] Un problème est survenu lors du chargement des Placements des Etiquettes dans le fichier de styles (.stylx) sélectionné, veuillez regarder dans le fichier journaux (logs) pour plus d'information.</value>
+  </data>
+  <data name="LoadLabelPlacementsOKMessage" xml:space="preserve">
+    <value>[OK] Le chargement des Placements des Etiquettes dans le fichier de styles (.stylx) sélectionné a finalisé correctement.</value>
+  </data>
+  <data name="LoadLabelPlacementsToolTip" xml:space="preserve">
+    <value>Charger dans la galerie (.stylx) choisie les placements des étiquettes définis dans le fichier de configuration Maplex, onglet 'label_placement'</value>
+  </data>
+  <data name="LoadTextSymbols" xml:space="preserve">
+    <value>Symboles Textuels</value>
+  </data>
+  <data name="LoadTextSymbolsFailedMessage" xml:space="preserve">
+    <value>[Attention] Un problème est survenu lors du chargement des Symboles Textuels dans le fichier de styles (.stylx) sélectionné, veuillez regarder dans le fichier journaux (logs) pour plus d'information.</value>
+  </data>
+  <data name="LoadTextSymbolsOKMessage" xml:space="preserve">
+    <value>[OK] Le chargement des Symboles Textuels dans le fichier de styles (.stylx) sélectionné a finalisé correctement.</value>
+  </data>
+  <data name="LoadTextSymbolsToolTip" xml:space="preserve">
+    <value>Charger dans la galerie (.stylx) choisie les symboles textuels définis dans le fichier de configuration Maplex, onglet 'text_symbol'</value>
+  </data>
+  <data name="MECHeading" xml:space="preserve">
+    <value>Configuration du Moteur Maplex</value>
+  </data>
+  <data name="Messages" xml:space="preserve">
+    <value>Messages :</value>
+  </data>
+  <data name="OpenLogs" xml:space="preserve">
+    <value>Ouvrir le fichier journaux (logs)</value>
+  </data>
+  <data name="OverwriteItems" xml:space="preserve">
+    <value>Ecraser les éléments déjà existants</value>
+  </data>
+  <data name="OverwriteItemsToolTip" xml:space="preserve">
+    <value>Remplacer les éléments</value>
+  </data>
+  <data name="SelectConfigFile" xml:space="preserve">
+    <value>(1) Sélectionner le fichier de configuration :</value>
+  </data>
+  <data name="SelectStylxFile" xml:space="preserve">
+    <value>(2) Sélectionner le fichier .stylx :</value>
+  </data>
+  <data name="StylxNotSelectedMessage" xml:space="preserve">
+    <value>Attention : un fichier de styles (.stylx) existant dans le projet doit être sélectionné dans l'Etape (2)</value>
+  </data>
+  <data name="ReintegrationHeading" xml:space="preserve">
+    <value>Réintegration</value>
+  </data>
+  <data name="SelectDataEditorSdeFile" xml:space="preserve">
+    <value>Fichier .sde de connexion en tant que Data Editor</value>
+  </data>
+  <data name="SelectGdbFile" xml:space="preserve">
+    <value>Fichier .gdb de la géodatabase contenant le replica </value>
+  </data>
+  <data name="SelectReplicaName" xml:space="preserve">
+    <value>Choisir le replica</value>
+  </data>
+  <data name="LaunchReintegration" xml:space="preserve">
+    <value>Exécuter</value>
+  </data>
+  <data name="DataEditorFilePathIsNullOrEmptyMessage" xml:space="preserve">
+    <value>Erreur: Le fichier .sde de connexion en mode data editor est nul ou incorrect</value>
+  </data>
+  <data name="GdbFilePathIsNullOrEmptyMessage" xml:space="preserve">
+    <value>Erreur: Le chemin du fichier .gdb de la geodatabase contenant le replica est nul ou incorrect</value>
+  </data>
+  <data name="VersionNotSelectedMessage" xml:space="preserve">
+    <value>Erreur: Un réplica doit être sélectionné</value>
+  </data>
+  <data name="SynchronizationKoMessage" xml:space="preserve">
+    <value>Erreur: La synchronisation s'est terminée en erreur</value>
+  </data>
+  <data name="ReconciliationKoMessage" xml:space="preserve">
+    <value>Erreur: La reconciliation s'est terminée en erreur</value>
+  </data>
+  <data name="ReconciliationAbortMessage" xml:space="preserve">
+    <value>Avertissement: Des conflits ont été détectés au cours du processus de réconciliation des versions.
+	Veuillez vous assurer de résoudre tous les conflits avant de tenter à nouveau la réconciliation.</value>
+  </data>
+  <data name="ReconciliationOkMessage" xml:space="preserve">
+    <value>Succès: La réintégration des données s'est déroulée avec succès</value>
+  </data>
+  <data name="GrantKOMessage" xml:space="preserve">
+    <value>Erreur: Il manque le GRANT sur la table sde.gdb_items dans votre connexion sde</value>
+  </data>
+  <data name="VersionNotExistingMessage" xml:space="preserve">
+    <value>Erreur: Aucun réplica/version ne correspond à cette géodatabase.</value>
+  </data>
+  <data name="SimultaneousReconcileMessage" xml:space="preserve">
+    <value>Erreur: Réconciliation impossible : la version cible fait actuellement l’objet d’une réconciliation par un autre opérateur.</value>
+  </data>
+  <data name="SelectGdbEditedFileText1" xml:space="preserve">
+    <value>Géodatabase fichier éditée</value>
+  </data>
+  <data name="SelectGdbOriginFileText" xml:space="preserve">
+    <value>Géodatabase fichier d'origine</value>
+  </data>
+  <data name="OutputFolderText" xml:space="preserve">
+    <value>Répertoire de sortie</value>
+  </data>
+  <data name="Warning003355Message" xml:space="preserve">
+    <value>Erreur lors de la réconciliation de la version</value>
+  </data>
+  <data name="Warning160360Message" xml:space="preserve">
+    <value>Erreur : Cette version est en cours de réconciliation dans une autre application</value>
+  </data>
+  <data name="ReconcileRunningMessage" xml:space="preserve">
+    <value>Réconciliation en cours ... (2/2)</value>
+  </data>
+  <data name="SynchronizeRunningMessage" xml:space="preserve">
+    <value>Synchronisation en cours ... (1/2)</value>
+  </data>
+  <data name="StartMessage" xml:space="preserve">
+    <value>Récupération des paramètres ... (0/2)</value>
+  </data>
+  <data name="StartMessageUpdate" xml:space="preserve">
+    <value>Calcul du différentiel en cours... (0/1)</value>
+  </data>
+  <data name="ConflictMapMessage" xml:space="preserve">
+    <value>Génération de la carte de résolution des conflits en cours... (1/1)</value>
+  </data>
+  <data name="ChooseClass" xml:space="preserve">
+    <value>Classe d'entité</value>
+  </data>
+  <data name="ChooseObjectid" xml:space="preserve">
+    <value>OBJECTID</value>
+  </data>
+  <data name="ChooseResolution" xml:space="preserve">
+    <value>Résolution</value>
+  </data>
+  <data name="SaveResolutionTxt" xml:space="preserve">
+    <value>Enregistrer</value>
+  </data>
+  <data name="ZoomButtonTxt" xml:space="preserve">
+    <value>Zoomer sur le conflict</value>
+  </data>
+  <data name="BrightButtonTxt" xml:space="preserve">
+    <value>Mettre en surbrillance</value>
+  </data>
+  <data name="FinalSaveTxt" xml:space="preserve">
+    <value>Enregistrement définitif</value>
+  </data>
+  <data name="SavingTxt" xml:space="preserve">
+    <value>Enregistrement en cours...</value>
+  </data>
+  <data name="Warning160370Message" xml:space="preserve">
+    <value>Erreur : La version a été redéfinie en référence à un nouvel état de base de données (nouveau StateID)</value>
+  </data>
+  <data name="SaveEditQuestion" xml:space="preserve">
+    <value>Voulez-vous enregistrer les modifications ?</value>
+  </data>
+  <data name="CancelOperation" xml:space="preserve">
+    <value>Opération abandonnée</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Sauvegarder</value>
+  </data>
+</root>

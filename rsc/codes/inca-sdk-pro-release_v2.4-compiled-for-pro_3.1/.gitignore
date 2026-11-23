@@ -1,0 +1,53 @@
+﻿################################################################################
+# Ignore some binary and local contextual files
+################################################################################
+
+/.vs
+/code/lib/IncaProSDK (Library)/obj
+/code/lib/IncaProSDK (Library)/bin/
+/code/corehost/ConsoleAPI/obj
+/code/corehost/ConsoleAPI/bin/
+/code/addin/IncaLabeling/obj
+/code/addin/IncaLabeling/bin/
+/code/.vs/IncaProSDK/v15
+/code/packages
+/code/addin/IncaEditing/obj
+/code/Migration-2023-06-12_17-11-19.txt
+/code/Migration-2023-06-12_17-11-19.html
+/code/lib/IncaProSDK (Library)/Migration-2023-06-12_17-11-19.html
+/code/lib/IncaProSDK (Library)/IncaProSDK (Library).csproj.bak
+/code/lib/IncaProSDK (Library)/Backup-2.x.zip
+/code/corehost/ExportAnnoProCoreHostAPI/obj
+/code/corehost/ExportAnnoProCoreHostAPI/Migration-2023-06-12_17-11-19.html
+/code/corehost/ExportAnnoProCoreHostAPI/ExportAnnoProCoreHostAPI.csproj.bak
+/code/corehost/ExportAnnoProCoreHostAPI/bin/Debug/net6.0-windows
+/code/corehost/ExportAnnoProCoreHostAPI/Backup-2.x.zip
+/code/corehost/ConcatAnnoProCoreHostAPI/obj
+/code/corehost/ConcatAnnoProCoreHostAPI/Migration-2023-06-12_17-11-19.html
+/code/corehost/ConcatAnnoProCoreHostAPI/ConcatAnnoProCoreHostAPI.csproj.bak
+/code/corehost/ConcatAnnoProCoreHostAPI/bin/Debug/net6.0-windows
+/code/corehost/ConcatAnnoProCoreHostAPI/Backup-2.x.zip
+/code/addin/QueryManager/QueryManager.csproj.bak
+/code/addin/QueryManager/obj
+/code/addin/QueryManager/Migration-2023-06-12_17-11-19.html
+/code/addin/QueryManager/bin/Debug/net6.0-windows
+/code/addin/QueryManager/Backup-2.x.zip
+/code/addin/IncaLabeling/Migration-2023-06-12_17-11-19.html
+/code/addin/IncaLabeling/MaplexEngineConfigAddIn.csproj.bak
+/code/addin/IncaLabeling/Backup-2.x.zip
+/code/addin/IncaEditing/Migration-2023-06-12_17-11-19.html
+/code/addin/IncaEditing/IncaEditing.csproj.bak
+/code/addin/IncaEditing/bin/Debug/net6.0-windows
+/code/addin/IncaEditing/Backup-2.x.zip
+/code/.vs
+/code/addin/IncaEditing/bin/Release/net6.0-windows
+/code/addin/QueryManager/bin/Release/net6.0-windows
+/code/corehost/ConcatAnnoProCoreHostAPI/bin/Release/net6.0-windows
+/code/corehost/ExportAnnoProCoreHostAPI/bin/Release/net6.0-windows
+/.idea
+
+/code/addin/IgnMaster/bin
+/code/addin/IgnMaster/obj
+/code/addin/IncaReintegration/bin/Debug/net6.0-windows
+/code/addin/IncaReintegration/obj
+/code/lib/IncaProSDK (Library)/IncaProSDK (Library).csproj.user

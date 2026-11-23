@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArcGIS defaultAssembly="IncaReintegration.dll" defaultNamespace="IncaReintegration" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{cf2c5527-7a8b-4873-93db-3276f3e4137a}" version="2.4" desktopVersion="3.1.41833">
+    <!--"version": AddIn version (tag du code); "desktopVersion": ArcGIS Pro Target version-->
+    <Name>IncaReintegration</Name>
+    <Description>Herramientas complementarias dedicadas a la extracción y reintegración de réplicas en ArcGIS Pro</Description>
+    <Image>Images\Reintegration32.png</Image>
+    <Author>IGN-Inca</Author>
+    <Company>IGN France</Company>
+    <Date>05/11/2026</Date>
+    <Subject>Framework</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <dependencies>
+    <!-- IgnMaster-->
+    <dependency name="{66f854f7-1e68-45bd-8751-280c7591036e}" />
+  </dependencies>
+  <modules>
+    <insertModule id="IncaReintegration_Module" className="IncaReintegrationModule" autoLoad="true" caption="Inca Reintegration">
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="IncaReintegration_Group1" keytip="Inca_Reintegration" caption="Reintegracion">
+          <!-- host controls within groups -->
+      <button refID="IncaUpdate_ShowButton" size="large" />
+      <button refID="ConflictManager_ShowButton" size="large" />
+      <button refID="IncaReintegration_Dockpane1_ShowButton" size="large" />
+        </group>
+      </groups>
+      <controls>
+        <!-- Main button in the "IGN Add-Ins" tab -->
+      <button id="IncaReintegration_Dockpane1_ShowButton" keytip="___" caption="Reintegracion" className="_Reintegration.IncaReintegrationView_ShowButton"
+          loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/CheckInCheckOutReplica16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/CheckInCheckOutReplica32.png">
+        <tooltip heading="Ensenar el panel de Reintegracion">
+          Herramienta de reintegración de una geodatabase de réplica<disabledText />
+        </tooltip>
+      </button>
+      <button id="IncaUpdate_ShowButton" keytip="___" caption="Update" className="_Update.IncaUpdateView_ShowButton"
+      loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/SoftwareUpdateDownload16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/SoftwareUpdateDownload32.png">
+        <tooltip heading="Ensenar el Update panel">
+          Herramienta para actualizar una geodatabase de réplica<disabledText />
+        </tooltip>
+      </button>
+      <button id="ConflictManager_ShowButton" keytip="___" caption="Conflictos" className="_ConflictManager.ConflictManagerView_ShowButton"
+    loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/SoftwareUpdateDownload16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/SoftwareUpdateDownload32.png">
+        <tooltip heading="Ensenar la ventana de resolución de conflictos">
+          Desactivado de momento<disabledText />
+        </tooltip>
+      </button>
+      </controls>
+    <dockPanes>
+      <dockPane id="IncaReintegration_Dockpane1" caption="Reintegracion" className="_Reintegration.IncaReintegrationViewModel" dock="group"
+            dockWith="esri_core_projectDockPane">
+        <content className="IncaReintegrationView" />
+      </dockPane>
+      <dockPane id="IncaUpdate_Dockpane" caption="Update" className="_Update.IncaUpdateViewModel" dock="group"
+        dockWith="esri_core_projectDockPane">
+        <content className="IncaUpdateView" />
+      </dockPane>
+      <dockPane id="ConflictManager_Dockpane" caption="Conflictos" className="_ConflictManager.ConflictManagerViewModel"
+          height="500" width="500" dock="float" hidden="true">
+        <content className="ConflictManagerView" />
+      </dockPane>
+    </dockPanes>
+    </insertModule>
+    <updateModule refID="IgnMaster_Module">
+      <tabs>
+        <updateTab refID="IgnMaster_Tab">
+          <insertGroup refID="IncaReintegration_Group1" />
+        </updateTab>
+      </tabs>
+    </updateModule>
+  </modules>
+</ArcGIS>

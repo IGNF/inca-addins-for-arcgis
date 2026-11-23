@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IncaDisplay</name>
+    </assembly>
+    <members>
+        <member name="T:IncaDisplay._QueryManager.QueryDockpaneView">
+            <summary>
+            Interaction logic for QueryDockpaneView.xaml
+            </summary>
+            <summary>
+            QueryDockpaneView
+            </summary>
+        </member>
+        <member name="M:IncaDisplay._QueryManager.QueryDockpaneView.#ctor">
+            <summary>
+            Ctor
+            </summary>
+        </member>
+        <member name="M:IncaDisplay._QueryManager.QueryDockpaneView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="F:IncaDisplay._QueryManager.QueryDockpaneViewModel.DockPaneId">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:IncaDisplay._QueryManager.QueryDockpaneViewModel.Show">
+            <summary>
+            Show the DockPane.
+            </summary>
+        </member>
+        <member name="F:IncaDisplay._QueryManager.QueryDockpaneViewModel._heading">
+            <summary>
+            Text shown near the top of the DockPane.
+            </summary>
+        </member>
+        <member name="T:IncaDisplay._QueryManager.QueryDockpane_ShowButton">
+            <summary>
+            Button implementation to show the DockPane.
+            </summary>
+        </member>
+        <member name="P:IncaDisplay.Module1.Current">
+            <summary>
+            Retrieve the singleton instance to this module here
+            </summary>
+        </member>
+        <member name="M:IncaDisplay.Module1.CanUnload">
+            <summary>
+            Called by Framework when ArcGIS Pro is closing
+            </summary>
+            <returns>False to prevent Pro from closing, otherwise True</returns>
+        </member>
+        <member name="M:IncaDisplay._QueryManager.QueryUtil.Selection_by_OID(System.String,System.String)">
+            fonction d'execution de la sélection par l'attribut OID
+        </member>
+        <member name="T:IncaDisplay._EditQueue.QueueEditionView">
+            <summary>
+            Interaction logic for QueueEditionView.xaml
+            </summary>
+            <summary>
+            QueueEditionView
+            </summary>
+        </member>
+        <member name="M:IncaDisplay._EditQueue.QueueEditionView.#ctor">
+            <summary>
+            Ctor
+            </summary>
+        </member>
+        <member name="M:IncaDisplay._EditQueue.QueueEditionView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:IncaDisplay._EditQueue.QueueEditionViewModel.Show">
+            <summary>
+            Show the DockPane.
+            </summary>
+        </member>
+        <member name="F:IncaDisplay._EditQueue.QueueEditionViewModel._heading">
+            <summary>
+            Text shown near the top of the DockPane.
+            </summary>
+        </member>
+        <member name="M:IncaDisplay._EditQueue.QueueEditionViewModel.AccesTable">
+            Valide l'accès à la table et l'existence de l'objet
+        </member>
+        <member name="M:IncaDisplay._EditQueue.QueueEditionViewModel.creerListe">
+            crée une liste pour la navigation au sein de la table
+        </member>
+        <member name="F:IncaDisplay._EditQueue.QueueEditionViewModel._CmdWorkOnObject">
+            <summary>
+            Button implementation to redirect on the selected object
+            </summary>
+        </member>
+        <member name="F:IncaDisplay._EditQueue.QueueEditionViewModel._CmdWorkBack">
+            <summary>
+            Button implementation one at the back 
+            </summary>
+        </member>
+        <member name="F:IncaDisplay._EditQueue.QueueEditionViewModel._CmdWorkNext">
+            <summary>
+            Button implementation to one in front
+            </summary>
+        </member>
+        <member name="M:IncaDisplay._EditQueue.QueueEditionViewModel.TestOIDExist(System.String,System.String)">
+            Test l'existence de l'objet d'OID oid dans la couche Name de la vue active
+        </member>
+        <member name="F:IncaDisplay._EditQueue.QueueEditionViewModel._CmdWorkStart">
+            <summary>
+            Button implementation to back to start
+            </summary>
+		</member>
+        <member name="F:IncaDisplay._EditQueue.QueueEditionViewModel._CmdWorkEnd">
+            <summary>
+            Button implementation to go to the end
+            </summary>
+        </member>
+        <member name="F:IncaDisplay._EditQueue.QueueEditionViewModel._CmdWorkremoveone">
+            <summary>
+            Button implementation delete an item from the list
+            </summary>
+        </member>
+        <member name="F:IncaDisplay._EditQueue.QueueEditionViewModel._CmdWorkremoveall">
+            <summary>
+            Button implementation to empty the list
+            </summary>
+        </member>
+        <member name="T:IncaDisplay._EditQueue.QueueEditionViewModel.TableInfo">
+            <summary>
+            Button implementation to 
+            </summary>
+        </member>
+        <member name="P:IncaDisplay._EditQueue.QueueEditionViewModel.TableInfo.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:IncaDisplay._EditQueue.QueueEditionViewModel.TableInfo.Definition">
+            <summary>
+            table definition
+            </summary>
+        </member>
+        <member name="F:IncaDisplay._EditQueue.QueueEditionViewModel._CmdFillWithTable">
+            <summary>
+            Button implementation to 
+            </summary>
+        </member>
+        <member name="F:IncaDisplay._EditQueue.QueueEditionViewModel._CmdFillWithSelection">
+            <summary>
+            Button implementation to 
+            </summary>
+        </member>
+        <member name="F:IncaDisplay._EditQueue.QueueEditionViewModel._gdbPath">
+            <summary>
+            Button implementation to 
+            </summary>
+        </member>
+        <member name="T:IncaDisplay._EditQueue.QueueEditionDockpane_ShowButton">
+            <summary>
+            Button implementation to show the DockPane.
+            </summary>
+        </member>
+    </members>
+</doc>

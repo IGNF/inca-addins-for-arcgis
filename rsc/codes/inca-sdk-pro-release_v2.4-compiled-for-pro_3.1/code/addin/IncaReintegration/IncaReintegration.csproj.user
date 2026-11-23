@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Page Update="_Reintegration\IncaReintegrationView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="_ConflictManager\ConflictManagerView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="_Update\IncaUpdateView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
